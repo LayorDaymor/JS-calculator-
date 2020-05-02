@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<title>Title</title>
+</head>
+<body>
+    <section id="cul"> 
+        <div class="container">
+        <div class="mt-4 bg-dark d-flex justify-content-between align-items-center text-nowrap"id="cul-header">
+            <h1 class="text-white">Calculator</h1>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="las la-minus i1 "></i></li>
+                <li class="list-inline-item"><i class="las la-stop i2"></i></li>
+                <li class="list-inline-item" id="sm"><i class="las la-times i3 "></i></li>
+            </ul>
+        </div>
+        <div class="text-place">
+            <i class="las la-bars"><b>Standard</b></i>
+            <i class="las la-undo-alt"></i>
+            <div id="eingabeFeld"></div>
+        </div>
+       
+
+        <div id="cul-button">
+            <!-- erste Zeile -->
+            <button  onclick ="ce()" class="box1">CE</button>
+            <button  onclick ="ce()"  class="box2">C</button>
+            <button  onclick ="backspace()"class="box3"><i class="las la-backspace"></i></button>
+            <button  onclick ="add(`/`)"class="box4">÷</button>
+            <!-- Zweite Zeile  Die numer-->
+            <button onkeyup ="add(7)" onclick ="add(7)" class="box5">7</button>
+            <button onclick ="add(8)" class="box6">8</button>
+            <button onclick ="add(9)" class="box7">9</button >
+            <button onclick ="add(`*`)"class="box8">X</button>
+            <!-- Dritte Zeile -->
+            <button  onclick ="add(4)" class="box9">4</button>
+            <button  onclick ="add(5)"class="box10">5</button>
+            <button  onclick ="add(6)"class="box11">6</button>
+            <button  onclick ="add(`-`)"class="box12"><i class="las la-minus " id="minusMitnummer"></i></button>
+            <!-- Vierte Zeile -->
+            <button onclick ="add(1)"class="box13">1</button>
+            <button onclick ="add(2)"class="box14">2</button>
+            <button onclick ="add(3)"class="box15">3</button>
+            <button onclick ="add(`+`)"class="box16"><i class="las la-plus"></i></button>
+            <!-- Fünfte Zeile -->
+            <button  onclick ="add(`%`)" class="box17">%</button>
+            <button  onclick ="add(0)"class="box18">0</button>
+            <button  onclick ="add(`,`)"class="box19">.</button>
+            <button onclick="gleich()" class="box20">=</button>
+        </div>
+        <div class="container">
+            <h2 class="text-center mx-auto mt-3">Created by <br> Ahmad Karbouj</h2>  
+        </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
